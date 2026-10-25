@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "official-example",
+  "projectile": {
+    "A": 16,
+    "Z": 8,
+    "ground_state": "0+",
+    "coupling_radius_fm": 1.2,
+    "source": "Hagino official ccfull.inp (pinned); https://www2.yukawa.kyoto-u.ac.jp/~kouichi.hagino/ccfull/ccfull.inp"
+  },
+  "target": {
+    "A": 144,
+    "Z": 62,
+    "ground_state": "0+",
+    "coupling_radius_fm": 1.06,
+    "source": "Hagino official ccfull.inp (pinned); https://www2.yukawa.kyoto-u.ac.jp/~kouichi.hagino/ccfull/ccfull.inp"
+  },
+  "potential": {
+    "id": "ws075",
+    "V0_MeV": 105.1,
+    "r0_fm": 1.1,
+    "a_fm": 0.75,
+    "radius_convention": "sum_A_cuberoot",
+    "source": "Hagino official ccfull.inp (pinned); https://www2.yukawa.kyoto-u.ac.jp/~kouichi.hagino/ccfull/ccfull.inp"
+  },
+  "couplings": {
+    "id": "C1",
+    "projectile": {
+      "type": "inert",
+      "modes": []
+    },
+    "target": {
+      "type": "vibrational",
+      "modes": [
+        {
+          "energy_MeV": 1.81,
+          "lambda": 3,
+          "beta_C": 0.205,
+          "beta_N": 0.205,
+          "phonons": 1,
+          "source": "Hagino official ccfull.inp (pinned); https://www2.yukawa.kyoto-u.ac.jp/~kouichi.hagino/ccfull/ccfull.inp"
+        }
+      ]
+    },
+    "target_mutual": "none"
+  },
+  "energy": {
+    "frame": "cm",
+    "min_MeV": 55,
+    "max_MeV": 70,
+    "step_MeV": 1
+  },
+  "radial": {
+    "Rmax_fm": 30,
+    "dr_fm": 0.05
+  },
+  "transfer": {
+    "enabled": false
+  },
+  "assumptions": [
+    "Proposed model, not a fitted or validated physical interpretation.",
+    "beta_N=beta_C is an explicit assumption; projectile inert; IWBC fusion; no transfer.",
+    "Energy grid 55..70 MeV in 1 MeV steps is a discussion default; D(E) diagnostic only."
+  ]
+}
