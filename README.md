@@ -1,6 +1,6 @@
 # CCFULL Agent
 
-[中文](README.md) | [English](README.en.md)
+[中文](README.ch.md) | [English](README.md)
 
 **A discussion-first research assistant for heavy-ion fusion with  CCFULL.**
 
